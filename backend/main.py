@@ -19,7 +19,7 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI(title="Pipeline Health Index API")
 
 # Setup CORS
-origins = ["http://localhost", "http://localhost:3000"]
+origins = ["http://localhost", "http://localhost:3000", "https://pipelineproject21.netlify.app"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
