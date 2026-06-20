@@ -1,7 +1,8 @@
 import os
 from sqlalchemy.orm import Session
-from .database import SessionLocal, engine, Base
-from . import models, auth
+from database import SessionLocal, engine, Base
+import models
+import auth
 
 def seed_database():
     """Seed the database with zero-state pipelines and wipe out mock data."""
