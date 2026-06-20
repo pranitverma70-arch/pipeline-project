@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 load_dotenv()
 
 # Fallback to SQLite if DATABASE_URL is not set
-SQLALCHEMY_DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///./phi_database.db")
+SQLALCHEMY_DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///./phi_database.db").strip()
 
 # Only pass check_same_thread for SQLite
 connect_args = {"check_same_thread": False} if SQLALCHEMY_DATABASE_URL.startswith("sqlite") else {}
