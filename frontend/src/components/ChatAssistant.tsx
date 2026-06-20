@@ -7,7 +7,7 @@ import { MessageSquare, X, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = "https://pipeline-backend-production-4cf4.up.railway.app";
 
 export default function ChatAssistant({ token }: { token: string }) {
   const [isOpen, setIsOpen] = useState(false);

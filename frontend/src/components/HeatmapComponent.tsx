@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = "https://pipeline-backend-production-4cf4.up.railway.app";
 
 export default function HeatmapComponent({ token }: { token: string }) {
   const [matrixData, setMatrixData] = useState<any[]>([]);

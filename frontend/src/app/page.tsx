@@ -15,7 +15,7 @@ const MapComponent = dynamic(() => import("@/components/MapComponent"), { ssr: f
 import HeatmapComponent from "@/components/HeatmapComponent";
 import ChatAssistant from "@/components/ChatAssistant";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = "https://pipeline-backend-production-4cf4.up.railway.app";
 
 export default function Home() {
   const [token, setToken] = useState<string | null>(null);
